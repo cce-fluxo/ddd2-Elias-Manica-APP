@@ -9,13 +9,12 @@ import Input from './src/components/Input';
 import { screenHeight, screenWidth } from './src/constants/dimensions';
 import colors from './src/constants/colors';
 
+import LoginScrren from './src/screens/loggedOut/LoginScrren';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Fluxo 123</Text>
-      <Button marginLeft={0} marginTop= {10} text = "Entrar" width={screenHeight * 0.20} height={53} onPress={() => console.log("entrar")} />
-      <Button marginLeft={0} marginTop= {10} text = "Cadastrar" width={screenHeight * 0.37} height={53} onPress={() => console.log("cadastrar")} />
-      <Input marginLeft={0} marginTop= {10} text = "E-mail" placeholder= "Digite seu E-mail" selectionColor={colors.preto}/>
+      <LoginScrren />
       <StatusBar style="auto" />
     </View>
   );
