@@ -10,11 +10,12 @@ import { screenHeight, screenWidth } from './src/constants/dimensions';
 import colors from './src/constants/colors';
 
 import LoginScrren from './src/screens/loggedOut/LoginScrren';
+import SingUpScreen from './src/screens/loggedOut/SingUpScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <LoginScrren />
+      <SingUpScreen />
       <StatusBar style="auto" />
     </View>
   );

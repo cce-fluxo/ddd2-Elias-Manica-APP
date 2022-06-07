@@ -5,7 +5,7 @@ import colors from "../../constants/colors";
 
 export const Container = styled.View`
     width: ${screenWidth * 0.87}px;
-    height: 72px;
+    height: 90px;
     background-color: ${colors.background};
     align-self: center;
     align-items: flex-start;

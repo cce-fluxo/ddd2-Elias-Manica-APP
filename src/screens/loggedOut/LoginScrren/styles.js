@@ -15,6 +15,7 @@ export const Logo = styled.Image`
     margin-top: 85px;
 `;
 
+
 export const SignUpButton = styled.TouchableOpacity`
     flex-direction: row;
     align-self: center;
