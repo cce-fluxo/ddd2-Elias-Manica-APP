@@ -1,7 +1,13 @@
 import React from "react";
 import { View, TouchableWithoutFeedback, Keyboard } from "react-native";
 
-import { Container, Logo, SignUpButton, TextButton } from "./styles";
+import {
+  Container,
+  Logo,
+  SignUpButton,
+  TextButton,
+  TextButtonSenha,
+} from "./styles";
 import { screenHeight, screenWidth } from "../../../constants/dimensions";
 import colors from "../../../constants/colors";
 
@@ -10,8 +16,9 @@ import Input from "../../../components/Input";
 
 import fluxoLogo from "../../../assets/fluxoLogo.png";
 import { AntDesign } from "@expo/vector-icons";
+import routes from "../../../routes";
 
-const LoginScrren = () => {
+const LoginScrren = ({ navigation }) => {
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <Container>
@@ -30,6 +37,7 @@ const LoginScrren = () => {
           placeholder="Digite sua senha"
           selectionColor={colors.preto}
         />
+        <TextButtonSenha>Esqueci minha senha</TextButtonSenha>
         <Button
           marginLeft={0}
           marginTop={50}
@@ -38,7 +46,11 @@ const LoginScrren = () => {
           height={53}
           onPress={() => console.log("entrar")}
         />
-        <SignUpButton>
+        <SignUpButton
+          onPress={() => {
+            navigation.navigate(routes.SingUpScreen);
+          }}
+        >
           <AntDesign name="user" size={24} color={colors.fluxo} />
           <TextButton>Cadastre-se</TextButton>
         </SignUpButton>
