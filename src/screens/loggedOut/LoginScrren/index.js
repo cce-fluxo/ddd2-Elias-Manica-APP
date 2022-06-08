@@ -37,7 +37,13 @@ const LoginScrren = ({ navigation }) => {
           placeholder="Digite sua senha"
           selectionColor={colors.preto}
         />
-        <TextButtonSenha>Esqueci minha senha</TextButtonSenha>
+        <SignUpButton
+          onPress={() => {
+            navigation.navigate(routes.ForgetPasswordScreen);
+          }}
+        >
+          <TextButtonSenha>Esqueci minha senha</TextButtonSenha>
+        </SignUpButton>
         <Button
           marginLeft={0}
           marginTop={50}

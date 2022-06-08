@@ -12,6 +12,7 @@ import colors from "./src/constants/colors";
 
 import LoginScrren from "./src/screens/loggedOut/LoginScrren";
 import SingUpScreen from "./src/screens/loggedOut/SingUpScreen";
+import ForgetPasswordScreen from "./src/screens/loggedOut/ForgetPassword";
 
 import SignedOutRoutes from "./src/routes/signedOut.routes";
 
