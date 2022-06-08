@@ -29,6 +29,7 @@ const LoginScrren = ({ navigation }) => {
           text="E-mail"
           placeholder="Digite seu E-mail"
           selectionColor={colors.preto}
+          keyboardType="email-address"
         />
         <Input
           marginLeft={0}
@@ -36,6 +37,7 @@ const LoginScrren = ({ navigation }) => {
           text="Senha"
           placeholder="Digite sua senha"
           selectionColor={colors.preto}
+          secureTextEntry
         />
         <SignUpButton
           onPress={() => {

@@ -9,6 +9,12 @@ const Input = ({
   text,
   placeholder,
   selectionColor,
+  secureTextEntry,
+  autoCapitalize,
+  value,
+  maxLength,
+  keyboardType,
+  onChangeText,
 }) => {
   return (
     <Container
@@ -18,7 +24,16 @@ const Input = ({
       placeholder={placeholder}
     >
       <Title> {text} </Title>
-      <InputText placeholder={placeholder} selectionColor={selectionColor} />
+      <InputText
+        placeholder={placeholder}
+        selectionColor={selectionColor}
+        secureTextEntry={secureTextEntry}
+        autoCapitalize={autoCapitalize}
+        value={value}
+        maxLength={maxLength}
+        keyboardType={keyboardType}
+        onChangeText={onChangeText}
+      />
     </Container>
   );
 };
