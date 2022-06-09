@@ -10,16 +10,16 @@ export const Container = styled.View`
 `;
 
 export const ImagemDuvida = styled.Image`
-  width: 200px;
-  height: 200px;
-  margin-top: 70px;
+  width: ${screenWidth * 0.3}px;
+  height: ${screenHeight * 0.25}px;
+  margin-top: ${screenHeight * 0.09}px;
 `;
 
 export const Titulo = styled.Text`
   font-size: 25px;
   font-weight: bold;
   color: ${colors.fluxo};
-  margin-top: 15px;
+  margin-top: ${screenHeight * 0.015}px;
 `;
 
 export const TextToReformedPass = styled.Text`
@@ -27,7 +27,7 @@ export const TextToReformedPass = styled.Text`
   font-size: 15px;
   font-weight: 400;
   color: ${colors.fluxo};
-  margin-top: 40px;
+  margin-top: ${screenHeight * 0.02}px;
   text-align: center;
 `;
 
@@ -35,7 +35,7 @@ export const LoginButton = styled.TouchableOpacity`
   flex-direction: row;
   align-self: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: ${screenHeight * 0.02}px;
 `;
 
 export const TextLoginButton = styled.Text`

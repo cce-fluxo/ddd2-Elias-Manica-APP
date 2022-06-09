@@ -25,7 +25,7 @@ const LoginScrren = ({ navigation }) => {
         <Logo source={fluxoLogo} />
         <Input
           marginLeft={0}
-          marginTop={15}
+          marginTop={screenHeight * 0.015}
           text="E-mail"
           placeholder="Digite seu E-mail"
           selectionColor={colors.preto}
@@ -33,7 +33,7 @@ const LoginScrren = ({ navigation }) => {
         />
         <Input
           marginLeft={0}
-          marginTop={10}
+          marginTop={screenHeight * 0.01}
           text="Senha"
           placeholder="Digite sua senha"
           selectionColor={colors.preto}
@@ -48,10 +48,10 @@ const LoginScrren = ({ navigation }) => {
         </SignUpButton>
         <Button
           marginLeft={0}
-          marginTop={50}
+          marginTop={screenHeight * 0.069}
           text="Entrar"
           width={screenHeight * 0.2}
-          height={53}
+          height={screenHeight * 0.06}
           onPress={() => console.log("entrar")}
         />
         <SignUpButton

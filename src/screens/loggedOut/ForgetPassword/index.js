@@ -17,7 +17,6 @@ import Button from "../../../components/Button";
 import Input from "../../../components/Input";
 
 import imagemDuvida from "../../../assets/imagemDuvida.png";
-import fluxoLogo from "../../../assets/fluxoLogo.png";
 
 import routes from "../../../routes";
 
@@ -34,7 +33,7 @@ const ForgetPasswordScreen = ({ navigation }) => {
         </TextToReformedPass>
         <Input
           marginLeft={0}
-          marginTop={30}
+          marginTop={screenHeight * 0.034}
           text="E-mail cadastrado"
           placeholder="Digite seu e-mail cadastrado"
           selectionColor={colors.preto}
@@ -42,10 +41,10 @@ const ForgetPasswordScreen = ({ navigation }) => {
         />
         <Button
           marginLeft={0}
-          marginTop={30}
+          marginTop={screenHeight * 0.034}
           text="Enviar"
           width={screenHeight * 0.2}
-          height={53}
+          height={screenHeight * 0.065}
           onPress={() => console.log("enviar")}
         />
         <LoginButton

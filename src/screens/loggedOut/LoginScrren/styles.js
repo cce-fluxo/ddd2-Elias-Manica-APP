@@ -10,16 +10,16 @@ export const Container = styled.View`
 `;
 
 export const Logo = styled.Image`
-  width: 225px;
-  height: 225px;
-  margin-top: 85px;
+  width: ${screenWidth * 0.7}px;
+  height: ${screenHeight * 0.26}px;
+  margin-top: ${screenHeight * 0.1}px;
 `;
 
 export const SignUpButton = styled.TouchableOpacity`
   flex-direction: row;
   align-self: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: ${screenHeight * 0.01}px;
 `;
 
 export const TextButton = styled.Text`
@@ -36,5 +36,5 @@ export const TextButtonSenha = styled.Text`
   font-size: 16px;
   color: ${colors.fluxo};
   text-decoration: underline;
-  margin-left: 140px;
+  margin-left: ${screenHeight * 0.17}px;
 `;
