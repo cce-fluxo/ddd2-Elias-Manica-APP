@@ -7,9 +7,17 @@ import {
   Text,
   StatusBar,
   ScrollView,
+  Image,
 } from "react-native";
 
-import { Container, ScrollProject } from "./styles";
+import {
+  Container,
+  ScrollProject,
+  ImagemProjeto,
+  TituloProjetos,
+  TextoDentro,
+  ArmazenaFoto,
+} from "./styles";
 
 import { screenHeight, screenWidth } from "../../../constants/dimensions";
 import colors from "../../../constants/colors";
@@ -23,92 +31,69 @@ const DATA = [];
 
 const getItem = (data, index) => ({
   id: Math.random().toString(12).substring(0),
-  title: `Item ${index + 1}`,
+  title: `${index + 1}`,
 });
 
-const getItemCount = (data) => 50;
+const getItemCount = () => 10;
+
+// quantidade de itens
 
 const Item = ({ title }) => (
-  <View style={styles.item}>
-    <Text style={styles.title}>{title}</Text>
-  </View>
+  <ArmazenaFoto>
+    <TextoDentro>{title}</TextoDentro>
+  </ArmazenaFoto>
 );
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-        <Text style={styles.texto}>Elias</Text>
-        <VirtualizedList
-          data={DATA}
-          renderItem={({ item }) => <Item title={item.title} />}
-          getItemCount={getItemCount}
-          getItem={getItem}
-          horizontal
-        />
-        <Text style={styles.texto}>Elias2</Text>
-        <VirtualizedList
-          data={DATA}
-          renderItem={({ item }) => <Item title={item.title} />}
-          getItemCount={getItemCount}
-          getItem={getItem}
-          horizontal
-        />
-        <Text style={styles.texto}>Eliass</Text>
-        <VirtualizedList
-          data={DATA}
-          renderItem={({ item }) => <Item title={item.title} />}
-          getItemCount={getItemCount}
-          getItem={getItem}
-          horizontal
-        />
-        <VirtualizedList
-          data={DATA}
-          renderItem={({ item }) => <Item title={item.title} />}
-          getItemCount={getItemCount}
-          getItem={getItem}
-          horizontal
-        />
-        <VirtualizedList
-          data={DATA}
-          renderItem={({ item }) => <Item title={item.title} />}
-          getItemCount={getItemCount}
-          getItem={getItem}
-          horizontal
-        />
-        <VirtualizedList
-          data={DATA}
-          renderItem={({ item }) => <Item title={item.title} />}
-          getItemCount={getItemCount}
-          getItem={getItem}
-          horizontal
-        />
-      </ScrollView>
-    </SafeAreaView>
+    <Container>
+      <TituloProjetos>elias</TituloProjetos>
+      <VirtualizedList
+        data={DATA}
+        renderItem={({ item }) => <Item title={item.title} />}
+        getItemCount={getItemCount}
+        getItem={getItem}
+        horizontal
+      />
+      <TituloProjetos>ELIAS2</TituloProjetos>
+      <VirtualizedList
+        data={DATA}
+        renderItem={({ item }) => <Item title={item.title} />}
+        getItemCount={getItemCount}
+        getItem={getItem}
+        horizontal
+      />
+      <TituloProjetos>Elias3</TituloProjetos>
+      <VirtualizedList
+        data={DATA}
+        renderItem={({ item }) => <Item title={item.title} />}
+        getItemCount={getItemCount}
+        getItem={getItem}
+        horizontal
+      />
+      <VirtualizedList
+        data={DATA}
+        renderItem={({ item }) => <Item title={item.title} />}
+        getItemCount={getItemCount}
+        getItem={getItem}
+        horizontal
+      />
+      <VirtualizedList
+        data={DATA}
+        renderItem={({ item }) => <Item title={item.title} />}
+        getItemCount={getItemCount}
+        getItem={getItem}
+        horizontal
+      />
+      <VirtualizedList
+        data={DATA}
+        renderItem={({ item }) => <Item title={item.title} />}
+        getItemCount={getItemCount}
+        getItem={getItem}
+        horizontal
+      />
+    </Container>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  scrollView: {
-    backgroundColor: "pink",
-  },
-  item: {
-    backgroundColor: "#f9c2ff",
-    height: 150,
-    justifyContent: "center",
-    marginVertical: 8,
-    marginHorizontal: 16,
-    padding: 20,
-  },
-  title: {
-    fontSize: 32,
-  },
-  texto: {
-    fontSize: 50,
-  },
-});
 
 export default HomeScreen;
