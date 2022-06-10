@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 import { screenHeight, screenWidth } from "../../../constants/dimensions";
 import colors from "../../../constants/colors";
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
   background-color: ${colors.background};
 `;
@@ -15,9 +15,12 @@ export const ScrollProject = styled.VirtualizedList`
 `;
 
 export const ImagemProjeto = styled.Image`
-  width: ${screenWidth * 0.3}px;
+  width: ${screenWidth * 0.6}px;
   height: ${screenHeight * 0.25}px;
-  margin-top: ${screenHeight * 0.09}px;
+  margin-top: ${screenHeight * 0.05}px;
+  margin-right: ${screenWidth * 0.1}px;
+  margin-left: ${screenWidth * 0.04}px;
+  margin-bottom: ${screenWidth * 0.05}px;
 `;
 
 export const TituloProjetos = styled.Text`
