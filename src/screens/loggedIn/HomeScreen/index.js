@@ -27,16 +27,32 @@ import Input from "../../../components/Input";
 
 import fluxoLogo from "../../../assets/fluxoLogo.png";
 
-const DATA = [];
+const data = [
+  {
+    id: 1,
+    title: "Item 1",
+  },
+  {
+    id: 2,
+    title: "Item 2",
+  },
+  {
+    id: 3,
+    title: "Item 3",
+  },
+  {
+    id: 4,
+    title: "Item 4",
+  },
+  {
+    id: 5,
+    title: "Item 5",
+  },
+];
 
-const getItem = (data, index) => ({
-  id: Math.random().toString(12).substring(0),
-  title: `${index + 1}`,
-});
-
-const getItemCount = () => 10;
-
-// quantidade de itens
+const getItem = (data, index) => {
+  return data[index];
+};
 
 const Item = ({ title }) => (
   <ArmazenaFoto>
@@ -47,51 +63,17 @@ const Item = ({ title }) => (
 const HomeScreen = () => {
   return (
     <Container>
-      <TituloProjetos>elias</TituloProjetos>
+      <TituloProjetos>eliass</TituloProjetos>
       <VirtualizedList
-        data={DATA}
+        data={data}
+        initialNumToRender={4}
         renderItem={({ item }) => <Item title={item.title} />}
-        getItemCount={getItemCount}
+        keyExtractor={(item) => item.key}
+        getItemCount={(data) => data.length}
         getItem={getItem}
         horizontal
       />
       <TituloProjetos>ELIAS2</TituloProjetos>
-      <VirtualizedList
-        data={DATA}
-        renderItem={({ item }) => <Item title={item.title} />}
-        getItemCount={getItemCount}
-        getItem={getItem}
-        horizontal
-      />
-      <TituloProjetos>Elias3</TituloProjetos>
-      <VirtualizedList
-        data={DATA}
-        renderItem={({ item }) => <Item title={item.title} />}
-        getItemCount={getItemCount}
-        getItem={getItem}
-        horizontal
-      />
-      <VirtualizedList
-        data={DATA}
-        renderItem={({ item }) => <Item title={item.title} />}
-        getItemCount={getItemCount}
-        getItem={getItem}
-        horizontal
-      />
-      <VirtualizedList
-        data={DATA}
-        renderItem={({ item }) => <Item title={item.title} />}
-        getItemCount={getItemCount}
-        getItem={getItem}
-        horizontal
-      />
-      <VirtualizedList
-        data={DATA}
-        renderItem={({ item }) => <Item title={item.title} />}
-        getItemCount={getItemCount}
-        getItem={getItem}
-        horizontal
-      />
     </Container>
   );
 };
