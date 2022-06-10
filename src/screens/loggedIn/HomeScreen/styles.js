@@ -17,16 +17,20 @@ export const ScrollProject = styled.VirtualizedList`
 export const ImagemProjeto = styled.Image`
   width: ${screenWidth * 0.6}px;
   height: ${screenHeight * 0.25}px;
-  margin-top: ${screenHeight * 0.05}px;
-  margin-right: ${screenWidth * 0.1}px;
+  margin-top: ${screenHeight * 0.005}px;
+  margin-right: ${screenWidth * 0.04}px;
   margin-left: ${screenWidth * 0.04}px;
   margin-bottom: ${screenWidth * 0.05}px;
 `;
 
 export const TituloProjetos = styled.Text`
-  font-weight: 400;
-  font-style: italic;
-  font-size: 50px;
+  width: 300px;
+  height: 27px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: ${screenHeight * 0.04}px;
+  margin-left: ${screenWidth * 0.04}px;
   color: ${colors.fluxo};
 `;
 
