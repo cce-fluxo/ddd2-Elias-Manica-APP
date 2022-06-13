@@ -16,5 +16,5 @@ export const TituloProjetos = styled.Text`
   line-height: 18px;
   margin-top: ${screenHeight * 0.04}px;
   margin-left: ${screenWidth * 0.04}px;
-  color: ${colors.background};
+  color: ${colors.colors};
 `;
