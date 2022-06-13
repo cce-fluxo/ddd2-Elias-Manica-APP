@@ -8,18 +8,18 @@ export const Container = styled.ScrollView`
   background-color: ${colors.background};
 `;
 
-export const ScrollProject = styled.VirtualizedList`
-  background-color: "#f9c2ff";
-  height: 150;
-  justify-content: "center";
+export const ScrollView = styled.ScrollView`
+  background-color: pink;
+  margin-left: 20px;
 `;
 
 export const ImagemProjeto = styled.Image`
-  width: ${screenWidth * 0.6}px;
+  width: ${screenWidth * 0.8}px;
   height: ${screenHeight * 0.25}px;
   margin-top: ${screenHeight * 0.005}px;
   margin-right: ${screenWidth * 0.04}px;
   margin-left: ${screenWidth * 0.04}px;
+  margin-bottom: ${screenHeight * 0.005}px;
 `;
 
 export const TituloProjetos = styled.Text`
