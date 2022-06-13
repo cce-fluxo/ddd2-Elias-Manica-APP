@@ -16,11 +16,13 @@ const Tab = createBottomTabNavigator();
 
 export default function SignedInRoutes() {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="WhoAre" component={WhoWeAreScreen} />
-      <Tab.Screen name="ConteudosScreen" component={ConteudosScreen} />
-      <Tab.Screen name="ContactScreen" component={ContactScreen} />
+    <Tab.Navigator
+      screenOptions={{ tabBarStyle: { backgroundColor: "#FA7D21" } }}
+    >
+      <Tab.Screen name="Cases" component={HomeScreen} />
+      <Tab.Screen name="Quem somos" component={WhoWeAreScreen} />
+      <Tab.Screen name="Conteudos" component={ConteudosScreen} />
+      <Tab.Screen name="Contato" component={ContactScreen} />
     </Tab.Navigator>
   );
 }
