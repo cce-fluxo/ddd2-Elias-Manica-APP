@@ -19,6 +19,11 @@ import { AntDesign } from "@expo/vector-icons";
 import routes from "../../../routes";
 
 const LoginScrren = ({ navigation }) => {
+  async function Requisicao() {
+    try {
+    } catch {}
+  }
+
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <Container>

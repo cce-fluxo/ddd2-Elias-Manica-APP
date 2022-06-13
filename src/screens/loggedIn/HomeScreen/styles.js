@@ -5,7 +5,7 @@ import colors from "../../../constants/colors";
 
 export const Container = styled.ScrollView`
   flex: 1;
-  background-color: ${colors.background};
+  background-color: ${colors.fluxo};
 `;
 
 export const ScrollView = styled.ScrollView`
@@ -30,7 +30,7 @@ export const TituloProjetos = styled.Text`
   line-height: 18px;
   margin-top: ${screenHeight * 0.04}px;
   margin-left: ${screenWidth * 0.04}px;
-  color: ${colors.fluxo};
+  color: ${colors.background};
 `;
 
 export const ArmazenaFoto = styled.View`
@@ -42,5 +42,9 @@ export const ArmazenaFoto = styled.View`
 `;
 
 export const TextoDentro = styled.Text`
-  font-size: 50px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: ${screenHeight * 0.04}px;
+  background-color: blue;
 `;

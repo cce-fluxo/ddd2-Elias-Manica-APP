@@ -10,12 +10,6 @@ import {
   ScrollView,
 } from "./styles";
 
-import { screenHeight, screenWidth } from "../../../constants/dimensions";
-import colors from "../../../constants/colors";
-
-import Button from "../../../components/Button";
-import Input from "../../../components/Input";
-
 import aquafluxo from "../../../assets/aquafluxo.png";
 import clinicamedica from "../../../assets/clinicamedica.png";
 import fono from "../../../assets/fono.png";
