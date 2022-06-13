@@ -1,18 +1,8 @@
 import React from "react";
-import {
-  SafeAreaView,
-  View,
-  VirtualizedList,
-  StyleSheet,
-  Text,
-  StatusBar,
-  ScrollView,
-  Image,
-} from "react-native";
+import { VirtualizedList } from "react-native";
 
 import {
   Container,
-  ScrollProject,
   ImagemProjeto,
   TituloProjetos,
   TextoDentro,

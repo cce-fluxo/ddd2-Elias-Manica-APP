@@ -20,7 +20,6 @@ export const ImagemProjeto = styled.Image`
   margin-top: ${screenHeight * 0.005}px;
   margin-right: ${screenWidth * 0.04}px;
   margin-left: ${screenWidth * 0.04}px;
-  margin-bottom: ${screenWidth * 0.05}px;
 `;
 
 export const TituloProjetos = styled.Text`
