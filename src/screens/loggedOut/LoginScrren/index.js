@@ -19,23 +19,30 @@ import { AntDesign } from "@expo/vector-icons";
 import routes from "../../../routes";
 
 const LoginScrren = ({ navigation }) => {
+  async function Requisicao() {
+    try {
+    } catch {}
+  }
+
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <Container>
         <Logo source={fluxoLogo} />
         <Input
           marginLeft={0}
-          marginTop={15}
+          marginTop={screenHeight * 0.015}
           text="E-mail"
           placeholder="Digite seu E-mail"
           selectionColor={colors.preto}
+          keyboardType="email-address"
         />
         <Input
           marginLeft={0}
-          marginTop={10}
+          marginTop={screenHeight * 0.01}
           text="Senha"
           placeholder="Digite sua senha"
           selectionColor={colors.preto}
+          secureTextEntry
         />
         <SignUpButton
           onPress={() => {
@@ -46,11 +53,11 @@ const LoginScrren = ({ navigation }) => {
         </SignUpButton>
         <Button
           marginLeft={0}
-          marginTop={50}
+          marginTop={screenHeight * 0.069}
           text="Entrar"
           width={screenHeight * 0.2}
-          height={53}
-          onPress={() => console.log("entrar")}
+          height={screenHeight * 0.06}
+          onPress={() => navigation.navigate(routes.SignedInRoutes)}
         />
         <SignUpButton
           onPress={() => {

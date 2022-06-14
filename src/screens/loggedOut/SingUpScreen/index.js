@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  View,
-  TouchableWithoutFeedback,
-  Keyboard,
-  KeyboardAvoidingView,
-} from "react-native";
+import { TouchableWithoutFeedback, Keyboard } from "react-native";
 
 import {
   Container,
@@ -33,38 +28,41 @@ const SingUpScreen = ({ navigation }) => {
         <Titulo> Cadastrar </Titulo>
         <Input
           marginLeft={0}
-          marginTop={10}
+          marginTop={screenHeight * 0.02}
           text="Nome"
           placeholder="Digite seu nome"
           selectionColor={colors.preto}
+          autoCapitalize="words"
         />
         <Input
           marginLeft={0}
-          marginTop={20}
+          marginTop={screenHeight * 0.02}
           text="Email"
           placeholder="Digite seu email"
           selectionColor={colors.preto}
+          keyboardType="email-address"
         />
         <Input
           marginLeft={0}
-          marginTop={20}
+          marginTop={screenHeight * 0.02}
           text="Senha"
           placeholder="Digite sua senha"
           selectionColor={colors.preto}
+          secureTextEntry
         />
-        <Input
+        {/*  <Input
           marginLeft={0}
           marginTop={20}
           text="Confirmar senha"
           placeholder="Confirme sua senha"
           selectionColor={colors.preto}
-        />
+  />  */}
         <Button
           marginLeft={0}
-          marginTop={30}
+          marginTop={screenHeight * 0.035}
           text="Cadastrar"
           width={screenHeight * 0.2}
-          height={53}
+          height={screenHeight * 0.067}
           onPress={() => console.log("cadastrar")}
         />
         <LoginButton
