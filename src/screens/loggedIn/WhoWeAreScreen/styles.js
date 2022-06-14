@@ -36,7 +36,13 @@ export const TextToReformedPass = styled.Text`
   margin-right: auto;
 `;
 
-export const Caixa = styled.View`
-  width: ${screenWidth * 0.34}px;
-  height: ${screenHeight * 0.3}px;
+export const Negrito = styled.Text`
+  font-weight: bold;
+`;
+
+export const Caixa = styled.Text`
+  width: ${screenWidth * 0.8}px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 `;
