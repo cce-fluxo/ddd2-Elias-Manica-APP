@@ -57,7 +57,7 @@ const LoginScrren = ({ navigation }) => {
           text="Entrar"
           width={screenHeight * 0.2}
           height={screenHeight * 0.06}
-          onPress={() => console.log("entrar")}
+          onPress={() => navigation.navigate(routes.SignedInRoutes)}
         />
         <SignUpButton
           onPress={() => {

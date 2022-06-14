@@ -6,4 +6,6 @@ export default {
   AmendoinScreen: "AmendoinScreen",
   GuarabolScreen: "GuarabolScreen",
   SistemaWebScreen: "SistemaWebScreen",
+  SignedOutRoutes: "SignedOutRoutes",
+  SignedInRoutes: "SignedInRoutes",
 };

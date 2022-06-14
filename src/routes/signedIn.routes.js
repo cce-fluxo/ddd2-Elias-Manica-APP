@@ -8,11 +8,11 @@ import WhoWeAreScreen from "../screens/loggedIn/WhoWeAreScreen";
 import ConteudosScreen from "../screens/loggedIn/ConteudosScreen";
 import ContactScreen from "../screens/loggedIn/ContactScreen";
 
-import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Entypo } from "@expo/vector-icons";
 
-const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 export default function SignedInRoutes() {
@@ -26,6 +26,11 @@ export default function SignedInRoutes() {
         },
         tabBarActiveTintColor: "white",
         tabBarInactiveTintColor: "black",
+        headerStyle: {
+          backgroundColor: "#FA7D21",
+        },
+        headerTintColor: "white",
+        headerTitleAlign: "center",
       }}
     >
       <Tab.Screen
@@ -35,6 +40,7 @@ export default function SignedInRoutes() {
           tabBarIcon: ({ size, color }) => (
             <Entypo name="home" size={size} color={color} />
           ),
+          title: "Cases",
         }}
       />
       <Tab.Screen

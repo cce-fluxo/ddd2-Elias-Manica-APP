@@ -17,13 +17,14 @@ import ContactScreen from "./src/screens/loggedIn/ContactScreen";
 
 import SignedOutRoutes from "./src/routes/signedOut.routes";
 import SignedInRoutes from "./src/routes/signedIn.routes";
+import MainRoutes from "./src/routes/main.routes";
 
 import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <SignedInRoutes />
+      <MainRoutes />
       <StatusBar style="auto" />
     </NavigationContainer>
   );
