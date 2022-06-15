@@ -1,7 +1,7 @@
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const baseURLEnviroment = "https://ddd-conhecimento.herokuapp.com";
+const baseURLEnviroment = "";
 
 const api = axios.create({
   baseURL: baseURLEnviroment,

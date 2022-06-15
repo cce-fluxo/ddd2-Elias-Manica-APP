@@ -30,19 +30,3 @@ export const TituloProjetos = styled.Text`
   margin-left: ${screenWidth * 0.049}px;
   color: ${colors.background};
 `;
-
-export const ArmazenaFoto = styled.View`
-  background-color: pink;
-  height: 150px;
-  justify-content: center;
-  margin: 8px 16px;
-  padding: 20px;
-`;
-
-export const TextoDentro = styled.Text`
-  font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: ${screenHeight * 0.04}px;
-  background-color: blue;
-`;
