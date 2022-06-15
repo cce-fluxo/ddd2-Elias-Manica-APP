@@ -13,7 +13,7 @@ export const TituloProjetos = styled.Text`
   font-weight: 900;
   font-size: 15px;
   line-height: 18px;
-  margin-top: ${screenHeight * 0.03}px;
+  margin-top: ${screenHeight * 0.02}px;
   margin-left: auto;
   margin-right: auto;
   color: ${colors.preto};

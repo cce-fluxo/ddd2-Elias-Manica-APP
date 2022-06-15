@@ -1,5 +1,4 @@
 import React from "react";
-import { View } from "react-native";
 
 import {
   Container,
@@ -94,6 +93,14 @@ const ContactScreen = () => {
       <InputContact
         marginLeft={0}
         marginTop={screenHeight * 0.01}
+        text="Celular*"
+        placeholder=""
+        selectionColor={colors.preto}
+        keyboardType="phone-pad"
+      />
+      <InputContact
+        marginLeft={0}
+        marginTop={screenHeight * 0.01}
         text="Empresa"
         placeholder=""
         selectionColor={colors.preto}
@@ -116,7 +123,12 @@ const ContactScreen = () => {
         name="ellipsis-horizontal"
         size={30}
         color="#FA7D21"
-        style={{ marginLeft: "auto", marginRight: "auto", marginBottom: -10 }}
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: -10,
+          marginTop: 20,
+        }}
       />
       <TituloProjetos>Contato por Telefone</TituloProjetos>
       <TextoNormal>(21) 96986-5927</TextoNormal>

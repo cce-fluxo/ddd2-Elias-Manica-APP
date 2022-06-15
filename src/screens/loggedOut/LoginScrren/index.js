@@ -1,5 +1,5 @@
 import React from "react";
-import { View, TouchableWithoutFeedback, Keyboard } from "react-native";
+import { TouchableWithoutFeedback, Keyboard } from "react-native";
 
 import {
   Container,

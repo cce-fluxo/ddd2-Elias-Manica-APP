@@ -1,5 +1,4 @@
 import React from "react";
-import { View } from "react-native";
 
 import {
   Container,
@@ -8,13 +7,11 @@ import {
   TextToReformedPass,
   Caixa,
   Negrito,
-  Valores,
 } from "./styles";
 
 import { screenHeight, screenWidth } from "../../../constants/dimensions";
 
 import colors from "../../../constants/colors";
-import Input from "../../../components/Input";
 
 import diretoria from "../../../assets/diretoria.png";
 import { Entypo, FontAwesome, Fontisto } from "@expo/vector-icons";

@@ -1,14 +1,6 @@
 import React from "react";
-import { VirtualizedList } from "react-native";
 
-import {
-  Container,
-  ImagemProjeto,
-  TituloProjetos,
-  TextoDentro,
-  ArmazenaFoto,
-  ScrollView,
-} from "./styles";
+import { Container, ImagemProjeto, TituloProjetos, ScrollView } from "./styles";
 
 import aquafluxo from "../../../assets/aquafluxo.png";
 import clinicamedica from "../../../assets/clinicamedica.png";
