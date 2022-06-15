@@ -12,6 +12,7 @@ import {
 
 import { screenHeight, screenWidth } from "../../../constants/dimensions";
 import ButtonContact from "../../../components/ButtonContact";
+import InputContact from "../../../components/InputContact";
 
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import colors from "../../../constants/colors";
@@ -76,9 +77,37 @@ const ContactScreen = () => {
         style={{ marginLeft: "auto", marginRight: "auto", marginBottom: -10 }}
       />
       <TituloProjetos>Entre em contato!</TituloProjetos>
+      <InputContact
+        marginLeft={0}
+        marginTop={screenHeight * -0.001}
+        text="Nome*"
+        placeholder=""
+        selectionColor={colors.preto}
+      />
+      <InputContact
+        marginLeft={0}
+        marginTop={screenHeight * 0.01}
+        text="Email*"
+        placeholder=""
+        selectionColor={colors.preto}
+      />
+      <InputContact
+        marginLeft={0}
+        marginTop={screenHeight * 0.01}
+        text="Empresa"
+        placeholder=""
+        selectionColor={colors.preto}
+      />
+      <InputContact
+        marginLeft={0}
+        marginTop={screenHeight * 0.01}
+        text="Qual a sua dúvida ou necessidade?*"
+        placeholder=""
+        selectionColor={colors.preto}
+      />
       <ButtonContact
         marginLeft={0}
-        marginTop={screenHeight * 0.009}
+        marginTop={screenHeight * 0.03}
         text="Entrar em contato"
         width={screenHeight * 0.4}
         height={screenHeight * 0.06}
