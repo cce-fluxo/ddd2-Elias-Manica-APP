@@ -11,6 +11,7 @@ import {
 } from "./styles";
 
 import { screenHeight, screenWidth } from "../../../constants/dimensions";
+import ButtonContact from "../../../components/ButtonContact";
 
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import colors from "../../../constants/colors";
@@ -68,6 +69,20 @@ const ContactScreen = () => {
           entregas acordadas e te orientamos em como prosseguir.
         </Contac>
       </Etapas>
+      <Ionicons
+        name="ellipsis-horizontal"
+        size={30}
+        color="#FA7D21"
+        style={{ marginLeft: "auto", marginRight: "auto", marginBottom: -10 }}
+      />
+      <TituloProjetos>Entre em contato!</TituloProjetos>
+      <ButtonContact
+        marginLeft={0}
+        marginTop={screenHeight * 0.009}
+        text="Entrar em contato"
+        width={screenHeight * 0.4}
+        height={screenHeight * 0.06}
+      />
       <Ionicons
         name="ellipsis-horizontal"
         size={30}
