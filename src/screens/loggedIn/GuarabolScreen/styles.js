@@ -5,7 +5,7 @@ import colors from "../../../constants/colors";
 
 export const Container = styled.ScrollView`
   flex: 1;
-  background-color: ${colors.background};
+  background-color: ${colors.fluxo};
 `;
 
 export const TituloProjetos = styled.Text`

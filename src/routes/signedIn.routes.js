@@ -19,13 +19,38 @@ const CasesStack = createStackNavigator();
 
 function CasesStackRoutes() {
   return (
-    <CasesStack.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}
-    >
-      <CasesStack.Screen name="Homescreen" component={HomeScreen} />
-      <CasesStack.Screen name="AmendoinScreen" component={AmendoinScreen} />
+    <CasesStack.Navigator>
+      <CasesStack.Screen
+        name="Homescreen"
+        component={HomeScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <CasesStack.Screen
+        name="AmendoinScreen"
+        component={AmendoinScreen}
+        options={{
+          title: "Descascador de amendoim",
+          headerTitleAlign: "center",
+        }}
+      />
+      <CasesStack.Screen
+        name="SistemaWebScreen"
+        component={SistemaWebScreen}
+        options={{
+          title: "Sistema Web",
+          headerTitleAlign: "center",
+        }}
+      />
+      <CasesStack.Screen
+        name="GuarabolScreen"
+        component={GuarabolScreen}
+        options={{
+          title: "Guarabol",
+          headerTitleAlign: "center",
+        }}
+      />
     </CasesStack.Navigator>
   );
 }

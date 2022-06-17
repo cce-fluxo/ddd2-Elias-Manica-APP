@@ -89,7 +89,9 @@ const HomeScreen = ({ navigation }) => {
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
-          onPress={() => alert("Pressed!")}
+          onPress={() => {
+            navigation.navigate(routes.SistemaWebScreen);
+          }}
         >
           <ImagemProjeto source={sistemaWEB} />
         </TouchableHighlight>
@@ -127,15 +129,13 @@ const HomeScreen = ({ navigation }) => {
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
-          onPress={() => alert("Pressed!")}
+          onPress={() => {
+            navigation.navigate(routes.GuarabolScreen);
+          }}
         >
           <ImagemProjeto source={guarabol} />
         </TouchableHighlight>
-        <TouchableHighlight
-          activeOpacity={0.6}
-          underlayColor="#DDDDDD"
-          onPress={() => alert("Pressed!")}
-        >
+        <TouchableHighlight activeOpacity={0.6} underlayColor="#DDDDDD">
           <ImagemProjeto source={enxaguante} />
         </TouchableHighlight>
         <TouchableHighlight
