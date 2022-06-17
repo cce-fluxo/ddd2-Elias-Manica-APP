@@ -30,3 +30,5 @@ export const TituloProjetos = styled.Text`
   margin-left: ${screenWidth * 0.049}px;
   color: ${colors.background};
 `;
+
+export const TouchableHighlight = styled.TouchableHighlight``;

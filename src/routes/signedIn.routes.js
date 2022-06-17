@@ -10,12 +10,27 @@ import ContactScreen from "../screens/loggedIn/ContactScreen";
 
 import { NavigationContainer } from "@react-navigation/native";
 
+import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Entypo } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
+const CasesStack = createStackNavigator();
 
-export default function SignedInRoutes() {
+function CasesStackRoutes() {
+  return (
+    <CasesStack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <CasesStack.Screen name="Homescreen" component={HomeScreen} />
+      <CasesStack.Screen name="AmendoinScreen" component={AmendoinScreen} />
+    </CasesStack.Navigator>
+  );
+}
+
+function MyTabs() {
   return (
     <Tab.Navigator
       screenOptions={{
@@ -35,7 +50,7 @@ export default function SignedInRoutes() {
     >
       <Tab.Screen
         name="Cases"
-        component={HomeScreen}
+        component={CasesStackRoutes}
         options={{
           tabBarIcon: ({ size, color }) => (
             <Entypo name="home" size={size} color={color} />
@@ -72,4 +87,8 @@ export default function SignedInRoutes() {
       />
     </Tab.Navigator>
   );
+}
+
+export default function SignedInRoutes() {
+  return <MyTabs />;
 }

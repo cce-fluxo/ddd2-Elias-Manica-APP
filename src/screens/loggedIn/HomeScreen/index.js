@@ -1,6 +1,14 @@
 import React from "react";
 
-import { Container, ImagemProjeto, TituloProjetos, ScrollView } from "./styles";
+import {
+  Container,
+  ImagemProjeto,
+  TituloProjetos,
+  ScrollView,
+  TouchableHighlight,
+} from "./styles";
+
+import routes from "../../../routes";
 
 import aquafluxo from "../../../assets/aquafluxo.png";
 import clinicamedica from "../../../assets/clinicamedica.png";
@@ -33,56 +41,238 @@ import economapas from "../../../assets/economapas.png";
 import moneti from "../../../assets/moneti.png";
 import vespa from "../../../assets/vespa.png";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <Container>
       <TituloProjetos>Máquinas e Equipamentos</TituloProjetos>
       <ScrollView horizontal>
-        <ImagemProjeto source={amendoim} />
-        <ImagemProjeto source={hut} />
-        <ImagemProjeto source={pmoc} />
-        <ImagemProjeto source={secador} />
-        <ImagemProjeto source={fluencia} />
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => {
+            navigation.navigate(routes.AmendoinScreen);
+          }}
+        >
+          <ImagemProjeto source={amendoim} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={hut} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={pmoc} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={secador} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={fluencia} />
+        </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Tecnologia e Automação</TituloProjetos>
       <ScrollView horizontal>
-        <ImagemProjeto source={aquafluxo} />
-        <ImagemProjeto source={clinicamedica} />
-        <ImagemProjeto source={fono} />
-        <ImagemProjeto source={sistemaWEB} />
-        <ImagemProjeto source={terapia} />
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={sistemaWEB} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={clinicamedica} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={fono} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={aquafluxo} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={terapia} />
+        </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Engenharia Química e Alimentos</TituloProjetos>
       <ScrollView horizontal>
-        <ImagemProjeto source={guarabol} />
-        <ImagemProjeto source={enxaguante} />
-        <ImagemProjeto source={cookie} />
-        <ImagemProjeto source={brits} />
-        <ImagemProjeto source={baradao} />
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={guarabol} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={enxaguante} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={cookie} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={brits} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={baradao} />
+        </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Gestão e Otimização de Processos</TituloProjetos>
       <ScrollView horizontal>
-        <ImagemProjeto source={americanas} />
-        <ImagemProjeto source={clube} />
-        <ImagemProjeto source={gabriel} />
-        <ImagemProjeto source={istel} />
-        <ImagemProjeto source={ufrj} />
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={americanas} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={clube} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={gabriel} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={istel} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={ufrj} />
+        </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Arquitetura, Construção Civil e Energia</TituloProjetos>
       <ScrollView horizontal>
-        <ImagemProjeto source={shirlei} />
-        <ImagemProjeto source={rosi} />
-        <ImagemProjeto source={cacacores} />
-        <ImagemProjeto source={janaiana} />
-        <ImagemProjeto source={roberto} />
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={shirlei} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={rosi} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={cacacores} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={janaiana} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={roberto} />
+        </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Gestão e Criação de Negócios</TituloProjetos>
       <ScrollView horizontal>
-        <ImagemProjeto source={cafe} />
-        <ImagemProjeto source={colegio} />
-        <ImagemProjeto source={economapas} />
-        <ImagemProjeto source={moneti} />
-        <ImagemProjeto source={vespa} />
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={cafe} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={colegio} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={economapas} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={moneti} />
+        </TouchableHighlight>
+        <TouchableHighlight
+          activeOpacity={0.6}
+          underlayColor="#DDDDDD"
+          onPress={() => alert("Pressed!")}
+        >
+          <ImagemProjeto source={vespa} />
+        </TouchableHighlight>
       </ScrollView>
     </Container>
   );
