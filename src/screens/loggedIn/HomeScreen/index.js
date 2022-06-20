@@ -45,7 +45,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <Container>
       <TituloProjetos>Máquinas e Equipamentos</TituloProjetos>
-      <ScrollView horizontal>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
@@ -85,7 +85,7 @@ const HomeScreen = ({ navigation }) => {
         </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Tecnologia e Automação</TituloProjetos>
-      <ScrollView horizontal>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
@@ -125,7 +125,7 @@ const HomeScreen = ({ navigation }) => {
         </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Engenharia Química e Alimentos</TituloProjetos>
-      <ScrollView horizontal>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
@@ -161,7 +161,7 @@ const HomeScreen = ({ navigation }) => {
         </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Gestão e Otimização de Processos</TituloProjetos>
-      <ScrollView horizontal>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
@@ -199,7 +199,7 @@ const HomeScreen = ({ navigation }) => {
         </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Arquitetura, Construção Civil e Energia</TituloProjetos>
-      <ScrollView horizontal>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
@@ -237,7 +237,7 @@ const HomeScreen = ({ navigation }) => {
         </TouchableHighlight>
       </ScrollView>
       <TituloProjetos>Gestão e Criação de Negócios</TituloProjetos>
-      <ScrollView horizontal>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <TouchableHighlight
           activeOpacity={0.6}
           underlayColor="#DDDDDD"
