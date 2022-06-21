@@ -18,10 +18,19 @@ import fluxoLogo from "../../../assets/fluxoLogo.png";
 import { AntDesign } from "@expo/vector-icons";
 import routes from "../../../routes";
 
+import api from "../../../services/api";
+
 const LoginScrren = ({ navigation }) => {
   async function Requisicao() {
     try {
-    } catch {}
+      const response = await api.post("/login", {
+        email: "eliasmanica@poli.ufrj.br",
+        password: "12345",
+      });
+      console.log("resposta:", response);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
